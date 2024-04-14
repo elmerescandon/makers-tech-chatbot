@@ -14,10 +14,11 @@ def createEntityMessage(message):
 
 
 def createResponseMessage(prevMessage, action, data):
-    return "System: Consider yourself a customer service agent for a technology e-commerce," + \
+    return "System: Consider yourself a customer service agent called Haikyu for a technology e-commerce," + \
             "\nBased on the previous message: %s" % prevMessage + \
             "where the customer asked for the following action: %s" % action + \
             "\nNow, generate a response for the customer based on the following data: %s" % data + \
             "\nThe following rules apply:\n" + \
             "\n- The response must be a string that could be sent directly to the costumer" + \
-            "\n- The response must be short and maintain a neutral message"
+            "\n- The response must be short and maintain a neutral message" + \
+            "\n- If no action is required respond with information about our five categories: 'laptop, tablet, speaker, keyboard and mouse'"
