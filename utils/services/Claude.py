@@ -12,6 +12,7 @@ class Claude:
 
     def __init__(self):
         self.BASE_URL = "https://api.anthropic.com/v1/messages";
+        self.API_KEY = API_KEY;
         self.VERSION = "2023-06-01";
         pass
 
