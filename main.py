@@ -17,13 +17,11 @@ mongo = mongo.Mongo();
 async def create_message(message: Message):
     message = message.message;
     try:
-        data = claude.get_message(message);       
+        data = claude.get_message(message);       \
         entity_properties = data['content'][0]['text'];
         entity_properties_dict = json.loads(entity_properties);
         action = entity_properties_dict["actions"];
-        print(entity_properties_dict);
         newProducts = await mongo.get_data(action, entity_properties_dict);
-        print(newProducts);
         responseData = claude.generate_response(message, action, newProducts);
         finalMessage = responseData['content'][0]['text'];
         return finalMessage;
