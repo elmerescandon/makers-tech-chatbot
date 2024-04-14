@@ -31,4 +31,5 @@ rules = [
     'Stock mean count_stock whether is in stock or out of stock',	
     'If the user asks for more information consider the specifications action.',
     'Provide concise answers, so a conversation can be more fluid.',
+    'Avoid close-ended questions or good-bye quotes.',
 ]
