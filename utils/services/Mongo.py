@@ -12,6 +12,7 @@ class Mongo:
 
     def __init__(self):
 
+        self.mongoClient = motor.motor_asyncio.AsyncIOMotorClient(MONGO_DB_URL);
         self.db = self.mongoClient.get_database("ecommerce");
         self.products = self.db.get_collection("products");
         pass
