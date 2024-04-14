@@ -4,7 +4,7 @@ initialInstruction = """System: You are an AI chatbot for a technology e-commerc
 
 instructions = {
     'actions': 'The actions that the user wants to perform',
-    'category': 'The category of the product, such as "laptops, tablet, speakers, keyboards and mouses"',
+    'category': 'The category of the product, such as "laptop, tablet, speaker, keyboard and mouse"',
     'brand': 'The brand of the product, such as "Dell", "Apple", "HP", etc. in case of laptops',
     'model': 'The specific model of the laptop like "MacBook Pro", "XPS 15", "Spectre x360", etc. in case of laptops',
     'specifications': 'Specific technical details about the product ("true" if asked, empty if not asked)',
@@ -14,9 +14,9 @@ instructions = {
     'rating': 'The rating or reviews of the laptop from 1 to 5'
 }
 actions = {
-    'count brands': 'Count the number of brands available in the database',
-    'count models': 'Count the number of categories available in the database',
-    'count stock': 'Count the number of products that are in stock',
+    'count_brands': 'Count the number of brands available in the database',
+    'count_models': 'Count the number of categories available in the database',
+    'count_stock': 'Count the number of products that are in stock',
     'recommend': 'Recommend a product based on the user\'s preferences',
     'price': 'Show the price range of the product',
     'specifications': 'Show the specifications of the product',
@@ -26,7 +26,8 @@ actions = {
 }
 
 rules = [
-    'If an entity is not present in the message, return an empty string for that identity.',
-    'If an entity is present in the message, return the entity value as a string.',
+    'If an entity is not present in the message, return an empty string for that identity otherwise return string.',
     'Only one action is available at a time.'
+    'Stock mean count_stock,"on stock" means "in stock" and "out of stock" means out of stock',
+    'If the user asks for more information (such as tell me more about certain product" ) consider the specifications action.',
 ]
