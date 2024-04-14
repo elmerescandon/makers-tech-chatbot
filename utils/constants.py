@@ -26,8 +26,9 @@ actions = {
 }
 
 rules = [
-    'If an entity is not present in the message, return an empty string for that identity otherwise return string.',
+    'If an entity is not present in the message, return an empty string',
     'Only one action is available at a time.'
-    'Stock mean count_stock,"on stock" means "in stock" and "out of stock" means out of stock',
-    'If the user asks for more information (such as tell me more about certain product" ) consider the specifications action.',
+    'Stock mean count_stock whether is in stock or out of stock',	
+    'If the user asks for more information consider the specifications action.',
+    'Provide concise answers, so a conversation can be more fluid.',
 ]
