@@ -1,6 +1,6 @@
 # Makers Tech 🏪 - Chatbot (Haikyu!) 🚀
 
-Makers Tech Chabot (called Haikyuu!) is an flexible, easy-to-use, and scalable API implementation for e-commerce solutions. We use the Claude 3 Haiku (Opus for testing) AI to generate entity classification and generative language. Also, our AI connects with your non-relational database, ideal
+Makers Tech Chabot (called Haikyuu! - definetly not a reference from the anime) is an flexible, easy-to-use, and scalable API implementation for e-commerce solutions. We use the Claude 3 Haiku (Opus for testing) AI to generate entity classification and generative language. Also, our AI connects with your non-relational database, ideal
 for VTex or Shopify implementations. Try it out locally now!
 
 ## Installation
