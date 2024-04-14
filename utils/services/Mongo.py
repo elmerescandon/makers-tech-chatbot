@@ -67,8 +67,8 @@ class Mongo:
                     products = await self.products.find(query).to_list(1000);
                 case "specifications":
                     products = await self.products.find(query).to_list(1000);
-
-
+                case _:
+                    products = {}
             return products;
     
 
