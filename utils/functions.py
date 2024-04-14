@@ -11,3 +11,13 @@ def createEntityMessage(message):
             "\nHere are additional rules:\n" + rules_string + \
             "\nThe available actions are:\n" + actions_string + \
             "\nNow return only the entity properties as a JSON object for the following message, avoid additional info: %s" % message
+
+
+def createResponseMessage(prevMessage, action, data):
+    return "System: Consider yourself a customer service agent for a technology e-commerce," + \
+            "\nBased on the previous message: %s" % prevMessage + \
+            "where the customer asked for the following action: %s" % action + \
+            "\nNow, generate a response for the customer based on the following data: %s" % data + \
+            "\nThe following rules apply:\n" + \
+            "\n- The response must be a string that could be sent directly to the costumer" + \
+            "\n- The response must be short and maintain a neutral message"
