@@ -40,6 +40,7 @@ Each contributed to the project as follows:
 -   Testing with database: Ráúl (100%)
 -   UI Mockups: Juan (100%)
 -   Presentation Design and Pitch: Juan (80%) and Raúl(20%)
+-   Pitch: Juan (50%) and Raúl(50%)
 
 ## Contact
 
